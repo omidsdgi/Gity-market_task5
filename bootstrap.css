@@ -65,8 +65,9 @@ a {
   left: 3vw;
 }
 
-.img-banner {
-    width: 35vw;
+.img-banner :hover{
+  cursor: pointer;
+
 }
 
 .contact-banner {
@@ -109,48 +110,54 @@ a {
 }
 
 .card {
-    text-align: center;
-    position: relative;
-}
+  text-align: center;
+  position: relative;
+    background-color: #fff; 
+  
+  }
+
 
 .card::after,
 .card::before {
-    content: "";
-    display: block;
-    border-radius: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    z-index: 0;
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 0;
 }
+
 .card::before {
-    width: 130%;
-    padding-bottom: 140%;
-    background-color: #fdf2e9;
-    top: 50%;
-    left: 50%;
-    z-index: -2;
+  width: 130%;
+  padding-bottom: 130%;
+  background-color: #fdf2e9;
+  top: 50%;
+  left: 50%;
+  z-index: -2;
 }
 
 .card::after {
-    width: 110%;
-    padding-bottom: 110%;
-    background-color: #fae5d3;
-    top: 50%;
-    left: 50%;
-    z-index: -1;
-}
-.card-body {
-    position: relative;
-    z-index: 1;
+  width: 110%;
+  padding-bottom: 110%;
+  background-color: #fae5d3;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
 }
 
-@media (max-width: 799.99px) {
-  .banner {
-    width: 100% !important;
-    margin: 0 auto;
-    background-size: cover;
-  }
+.card-body {
+  position: relative;
+  z-index: 1;
 }
+
+.card-img-top:hover {
+  cursor: pointer;
+  transform: scale(1.03); 
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
   @media (max-width: 799.99px) {
     .logo-title {
         font-size: 2rem;
